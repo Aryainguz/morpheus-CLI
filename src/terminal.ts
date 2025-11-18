@@ -295,7 +295,19 @@ Note: AI features will prompt for Gemini API key if not set.
 
     try {
       if (!this.model) {
-        yield "Error: AI not initialized. Use an AI command to set up API key.";
+        const apiKey = await this.promptForApiKey();
+        if (!apiKey) {
+          yield chalk.yellow(
+            "⚠️  AI features require a valid Gemini API key. Shell commands will continue to work normally."
+          );
+          return;
+        }
+        this.setupAI(apiKey);
+      }
+
+      // Double-check that model is now initialized
+      if (!this.model) {
+        yield "Error: Failed to initialize AI model.";
         return;
       }
 

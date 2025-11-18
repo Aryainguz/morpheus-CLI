@@ -1,6 +1,6 @@
 {
   "name": "@aryainguz/morpheus-cli",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A hybrid AI-powered terminal that combines shell functionality with Gemini AI assistant. Execute regular commands or get AI help with explanations, code generation, and more.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
