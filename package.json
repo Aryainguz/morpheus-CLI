@@ -1,0 +1,71 @@
+{
+  "name": "@aryainguz/morpheus-cli",
+  "version": "1.0.0",
+  "description": "A hybrid AI-powered terminal that combines shell functionality with Gemini AI assistant. Execute regular commands or get AI help with explanations, code generation, and more.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "morpheus-cli": "dist/cli.js",
+    "morpheus": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "morpheus",
+    "morpheus-cli",
+    "ai",
+    "terminal",
+    "gemini",
+    "cli",
+    "assistant",
+    "shell",
+    "hybrid",
+    "react",
+    "typescript",
+    "natural-language",
+    "code-generation",
+    "developer-tools"
+  ],
+  "author": "Aryainguz <aryaninguz369@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "framer-motion": "^10.16.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/readline-sync": "^1.4.8",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aryainguz/morpheus-CLI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aryainguz/morpheus-CLI/issues"
+  },
+  "homepage": "https://github.com/Aryainguz/morpheus-CLI#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
